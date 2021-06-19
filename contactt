@@ -1,0 +1,970 @@
+* {
+    margin: 0;
+    padding: 0;
+
+   }
+   body{
+    font-family: 'Poppins', sans-serif;
+   }
+   .header{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: .5s ease;
+}
+/* nav */
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+nav img{
+    width: 200px;
+}
+summary{
+    display: block;
+}
+.menutop{
+    flex: 1;
+    margin-left: 600px;
+    position: absolute;
+    /* z-index: 1; */
+}
+.menutop ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.menutop ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+.menutop ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #b31409;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: auto;
+}
+.menutop ul li:hover::after{
+    width: 100%;
+}
+    /* Nav bar */
+
+    /* contact */
+    main{
+        color: black;
+    }
+   .headcontact{
+    font-family: 'Mallanna', sans-serif;
+    font-size: 34px;
+    text-align: center;
+    /* padding: 15px 5px 0px 5px; */
+    margin: 15px 5px 0px 5px;
+   }
+   .textcontact{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+    /* padding: 5px; */
+   }
+   hr.style3 {
+	border-top: 1px dashed white;
+	border-bottom: 1px dashed rgb(65, 63, 63);
+    margin: 0px 0px 10px 130px;
+}
+   .datacontact{
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    grid-template-areas: "logocontact mapcontact";
+    margin: 20px 30px 20px 120px ;
+   }
+   .logocontact{
+    display: grid;
+    padding:10px;
+    grid-template-columns: 50px;
+    grid-template-rows: 120px 110px;
+    grid-template-areas: "calllogo calldata"
+                         "emaillogo emaildata"
+                         "addresslogo addressdata";
+    /* text-align: center; */
+    color: black;
+   }
+   #logocon{
+       width: 20px;
+       height: 20px;
+       margin: 30px 30px;
+   }
+
+   .mapimg{
+    width: 550px;
+    height: 300px;
+    margin: 30px 0px;
+   }
+   .namelogocontact{
+       margin: 1px;
+   }
+   #datalogocontact{
+       padding: auto;
+       margin: 5px 0px 0px 0px;
+       font-family: 'Roboto', sans-serif;
+       font-size: 13px;
+   }
+   .call{
+       margin: 15px;
+   }
+   .email{
+    margin: 15px;
+   }
+   .address{
+       margin: 15px;
+   }
+   #logocontact{
+    grid-area: logocontact; 
+   }
+   #mapcontact{
+       grid-area: mapcontact;
+   }
+   #addresslogo{
+       grid-area: address;
+   }
+   #emaillogo{
+    grid-area: email;
+   }
+   #calllogo{
+    grid-area: call;
+   }
+   #calldata{
+    grid-area: calldata;
+   }
+   #emaildata{
+    grid-area: emaildata;
+   }
+   #addressdata{
+    grid-area: addressdata;
+   }
+  
+   /* contact */
+
+  /* footer */
+  h2{
+    font-weight: 600;
+    font-size: 17px;
+}
+footer{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px 50px 30px;
+    color: #fff;
+    background-color: #2e2e2e;
+}
+.footer > *{
+    flex: 1 100%;
+}
+.footer-left{
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+.footer-logo {
+    width: 60%;
+}
+.footer-socotec{
+    width: 55%;
+    margin: 15px;
+}
+.footer ul{
+    list-style: none;
+    padding-left: 0;
+}
+.footer li{
+    line-height: 2em;
+}
+.footer a{
+    text-decoration: none;
+}
+.footer-right{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+}
+.footer-right > *{
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+.box a{
+    color: #999;
+}
+.footer-bottom{
+    text-align: center;
+    color: #999;
+    padding-top: 30px;
+}
+   
+   /*resposive*/
+   @media(max-width: 900px){
+    nav img{
+        margin-top: 5px;
+        width: 150px;
+    }
+    .text-box h1{
+        font-size: 30px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s ;
+    }
+    nav .fa{
+        display: block;
+        color: gray;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .nav-links ul li a{
+        color: white;
+    }
+}
+   @media screen and (max-width:1500px) {
+    .wrapper {
+     width: 100%;
+    }
+    nav .logo{
+        margin: 20px  100px;
+       }
+       hr.style3 {
+        border-top: 1px dashed white;
+        border-bottom: 1px dashed rgb(65, 63, 63);
+        margin: 0px 0px 10px 100px;
+        width: 1050px;
+    }
+   }
+   @media screen and (max-width:1200px) {
+    .wrapper {
+     width: 100%;
+    }
+    nav .logo{
+        margin: 20px  100px;
+       }
+       hr.style3 {
+        border-top: 1px dashed white;
+        border-bottom: 1px dashed rgb(65, 63, 63);
+        margin: 0px 0px 10px 130px;
+        width: 950px;
+    }
+   }
+
+
+   @media screen and (max-width:1100px) {
+    .wrapper {
+     width: 100%;
+    }
+    nav .logo{
+        margin: 20px  100px;
+       }
+       hr.style3 {
+        border-top: 1px dashed white;
+        border-bottom: 1px dashed rgb(65, 63, 63);
+        margin: 0px 0px 10px 100px;
+        width: 850px;
+    }
+    .mapimg{
+        width: 480px;
+        height: 250px;
+        margin: 30px 0px;
+       }
+       .logocontact{
+        grid-template-columns: 50px;
+        grid-template-rows: 100px 90px;
+       }
+       #datalogocontact{
+        font-size: 12px;
+    }
+    nav .menutop{
+        margin-left: 250px;
+        font-size: 12px;
+    }
+}
+  
+
+   @media screen and (max-width:1000px) {
+    .wrapper {
+     width: 100%;
+    }
+    nav .logo{
+        margin: 20px  100px;
+       }
+       hr.style3 {
+        border-top: 1px dashed white;
+        border-bottom: 1px dashed rgb(65, 63, 63);
+        margin: 0px 0px 10px 80px;
+        width: 820px;
+    }
+    .mapimg{
+        width: 400px;
+        height: 220px;
+        margin: 50px 0px;
+       }
+       #datalogocontact{
+        font-size: 12px;
+       }
+   }
+   @media screen and (max-width:950px) {
+    .wrapper {
+     width: 100%;
+    }
+    nav .logo{
+        margin: 20px  100px;
+       }
+       hr.style3 {
+        border-top: 1px dashed white;
+        border-bottom: 1px dashed rgb(65, 63, 63);
+        margin: 0px 0px 10px 80px;
+        width: 750px;
+    }
+    .mapimg{
+        width: 400px;
+        height: 220px;
+        margin: 30px 0px;
+       }
+       #datalogocontact{
+        font-size: 11px;
+       }
+       .headcontact{
+        font-size: 28px;
+        margin: 30px 5px 0px 5px;
+       }
+       .logocontact{
+        padding:20px;
+        grid-template-columns: 50px;
+        grid-template-rows: 90px 80px;
+       }
+   }
+
+   @media screen and (max-width:900px) {
+       hr.style3 {
+        border-top: 1px dashed white;
+        border-bottom: 1px dashed rgb(65, 63, 63);
+        margin: 0px 0px 10px 100px;
+        width: 700px;
+    }
+       .headcontact{
+        font-size: 28px;
+        margin: 50px 5px 0px 5px;
+       }
+       .mapimg{
+        width: 380px;
+        height: 220px;
+        margin: 10px 0px;
+       }
+       #datalogocontact{
+        font-size: 11px;
+       }
+       .logocontact{
+        padding:10px;
+        grid-template-columns: 50px;
+        grid-template-rows: 80px 70px;
+       }
+       @media(max-width: 900px){
+        nav img{
+            margin-top: 20px;
+            width: 200px;
+        }
+        .text-box h1{
+            font-size: 30px;
+            z-index: 10;
+        }
+        .menutop{
+            display: none;
+        }
+       
+    :root {
+        --primColor: #dcdcdc;
+        --secoColor: #555555;
+        --cornerRad: 4px;
+      }
+    
+      details {
+        position: absolute;
+        z-index:9;
+        top:20px;
+        right:10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+      }
+      summary {
+        writing-mode: vertical-lr;
+        text-align: center;
+        padding: 12px 10px;
+        width: 23px;
+        height: 17px;
+        color: var(--secoColor);
+        cursor: pointer;
+        user-select: none;
+        outline: none;
+        transition: transform 200ms ease-in-out 0s;
+        position: absolute;
+        z-index:9;
+        top:20px;
+        right:20px;
+      }
+      summary::before,
+      summary::after {
+        position: static;
+        top: 0;
+        left: 0;
+      }
+      summary::before {
+        content: "";
+      }
+      summary::after {
+        content: "III";
+        letter-spacing: -1px;
+      }
+      summary:hover {
+        transform: scale(1.1);
+      }
+      summary::marker {
+        font-size: 0;
+      }
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      details[open] .menu {
+        animation-name: menuAnim;
+      }
+      details[open] summary::before {
+        content: "X";
+      }
+      details[open] summary::after {
+        content: "";
+      }
+      .menu {
+        height: 0;
+        width: fit-content;
+        border-radius: var(--cornerRad);
+        background-color:white;
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+        margin-top: 75px;
+        margin-right: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        animation: closeMenu 300ms ease-in-out forwards;
+      }
+      .menu a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        padding: 12px 24px;
+        margin: 0 16px;
+        color: var(--secoColor);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        text-decoration: none;
+        text-align: center;
+        transition: filter 200ms linear 0s;
+      }
+      .menu a:nth-of-type(1) {
+        padding-top: 24px;
+      }
+      .menu a:nth-last-of-type(1) {
+        border-bottom: none;
+      }
+      .menu a:hover {
+        filter: brightness(200%);
+        color: red;
+      }
+      /* details::before {
+        content: "← Click This Button";
+        color: var(--secoColor);
+        position: absolute;
+        margin-left: 80px;
+        padding: 10px 10px;
+        opacity: 0.4;
+      }
+      details[open]::before {
+        animation: fadeMe 300ms linear forwards;
+      } */
+      @keyframes menuAnim {
+        0% {
+          height: 0;
+        }
+        100% {
+          height: 312px;
+        }
+      }
+      @keyframes fadeMe {
+        0% {
+          opacity: 0.4;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+        .row{
+            display: grid;
+            grid-row: inherit;
+        }
+    
+      
+    
+   }
+   @media screen and (max-width:890px) {
+    nav .logo{
+        margin: 20px  50px;
+       }
+    hr.style3 {
+     border-top: 1px dashed white;
+     border-bottom: 1px dashed rgb(65, 63, 63);
+     margin: 0px 0px 10px 70px;
+     width: 670px;
+ }
+    .headcontact{
+     font-size: 26px;
+     margin: 10px 5px 0px 5px;
+    }
+    .mapimg{
+     width: 340px;
+     height: 210px;
+     margin: 20px 0px;
+    }
+    #datalogocontact{
+     font-size: 11px;
+    }
+    .textcontact{
+        font-size: 13px;
+       }
+}
+   @media screen and (max-width:800px) {
+    nav .logo{
+        margin: 15px  30px;
+       }
+    hr.style3 {
+     border-top: 1px dashed white;
+     border-bottom: 1px dashed rgb(65, 63, 63);
+     margin: 0px 0px 10px 60px;
+     width: 640px;
+ }
+   .headcontact{
+    font-size: 24px;
+    margin: 10px 5px 0px 5px;
+   }
+   .mapimg{
+    width: 320px;
+    height: 180px;
+    margin: 20px 0px;
+   }
+   #datalogocontact{
+    font-size: 10px;
+   }
+   .textcontact{
+    font-size: 12px;
+   }
+   #logocon{
+    margin: 25px 20px;
+   }
+}
+
+@media screen and (max-width:740px) {
+    nav .logo{
+        margin: 15px  30px;
+       }
+    hr.style3 {
+     border-top: 1px dashed white;
+     border-bottom: 1px dashed rgb(65, 63, 63);
+     margin: 0px 0px 10px 60px;
+     width: 600px;
+ }
+ nav ul{
+    margin-right: 50px;
+   }
+   .headcontact{
+    font-size: 24px;
+    margin: 10px 5px 0px 5px;
+   }
+   .mapimg{
+    width: 280px;
+    height: 180px;
+    margin: 20px 0px;
+   }
+   #datalogocontact{
+    font-size: 10px;
+   }
+   .textcontact{
+    font-size: 12px;
+   }
+   .logocontact{
+    grid-template-columns: 50px;
+    grid-template-rows: 60px 60px;
+   }
+   #logocon{
+    margin: 20px 20px;
+}
+}
+
+   @media screen and (max-width:720px) {
+    .wrapper {
+     width: 100%;
+    }
+    nav .logo{
+        margin: 15px  30px;
+       }
+    .logo img{
+        width: 150px;
+    }
+    hr.style3 {
+        border-top: 1px dashed white;
+        border-bottom: 1px dashed rgb(65, 63, 63);
+        margin: 0px 0px 10px 60px;
+        width: 580px;
+    }
+      .headcontact{
+       font-size: 24px;
+       margin: 10px 5px 0px 5px;
+      }
+      .mapimg{
+       width: 280px;
+       height: 180px;
+       margin: 20px 0px;
+      }
+      #datalogocontact{
+       font-size: 10px;
+      }
+      .textcontact{
+       font-size: 12px;
+      }
+      .logocontact{
+       grid-template-columns: 30px;
+       grid-template-rows: 60px 60px;
+      }
+      #logocon{
+       margin: 20px 5px;
+   }
+   .logofooter img{
+    width: 120px;
+}
+
+   }
+
+   
+   @media screen and (max-width:700px) {
+    .wrapper {
+     width: 100%;
+    }
+    nav .logo{
+        margin: 15px  30px;
+       }
+    .logo img{
+        width: 140px;
+    }
+    hr.style3 {
+        border-top: 1px dashed white;
+        border-bottom: 1px dashed rgb(65, 63, 63);
+        margin: 0px 0px 10px 60px;
+        width: 550px;
+    }
+      .headcontact{
+       font-size: 24px;
+       margin: 10px 5px 0px 5px;
+      }
+      .mapimg{
+       width: 260px;
+       height: 160px;
+       margin: 20px 0px;
+      }
+      #datalogocontact{
+       font-size: 10px;
+      }
+      .textcontact{
+       font-size: 12px;
+      }
+      .logocontact{
+       grid-template-columns: 30px;
+       grid-template-rows: 60px 60px;
+      }
+      #logocon{
+       margin: 20px 5px;
+   }
+}
+
+   }
+
+   @media screen and (max-width:650px) {
+    .wrapper {
+     width: 100%;
+    }
+    nav .logo{
+        margin: 15px  30px;
+       }
+    .logo img{
+        width: 140px;
+    }
+    hr.style3 {
+        border-top: 1px dashed white;
+        border-bottom: 1px dashed rgb(65, 63, 63);
+        margin: 0px 0px 10px 60px;
+        width: 520px;
+    }
+      .headcontact{
+       font-size: 24px;
+       margin: 10px 5px 0px 5px;
+      }
+      .mapimg{
+       width: 240px;
+       height: 160px;
+       margin: 20px 0px;
+      }
+      #datalogocontact{
+       font-size: 10px;
+      }
+      .textcontact{
+       font-size: 12px;
+      }
+      .logocontact{
+        padding:10px 10px 10px 0px;
+       grid-template-columns: 20px;
+       grid-template-rows: 60px 60px;
+      }
+      #logocon{
+       margin: 20px 0px;
+   }
+  }
+
+   @media screen and (max-width:600px) {
+    .wrapper {
+     width: 100%;
+    }
+    nav .logo{
+        margin: 30px  30px;
+       }
+    .logo img{
+        width: 120px;
+    }
+    hr.style3 {
+        border-top: 1px dashed white;
+        border-bottom: 1px dashed rgb(65, 63, 63);
+        margin: 0px 0px 10px 60px;
+        width: 480px;
+    }
+      .headcontact{
+       font-size: 22px;
+       margin: 10px 5px 0px 5px;
+      }
+      .mapimg{
+       width: 200px;
+       height: 140px;
+       margin: 20px 0px;
+      }
+      #datalogocontact{
+       font-size: 10px;
+      }
+      .textcontact{
+       font-size: 12px;
+      }
+      .logocontact{
+        padding:10px 10px 10px 0px;
+       grid-template-columns: 20px;
+       grid-template-rows: 60px 60px;
+      }
+      #logocon{
+       margin: 20px 0px;
+   }
+   }
+   @media(min-width: 600px){
+    .footer-right > *{
+        flex: 1;
+    }
+    .footer-left{
+        flex: 1 0px;
+    }
+    .footer-right{
+        flex: 2 0px;
+    }
+  }
+  @media(max-width: 600px){
+    .footer{
+        padding: 15px;
+    }
+  }
+   @media screen and (max-width:580px) {
+    .wrapper {
+     width: 100%;
+    }
+    nav .logo{
+        margin: 30px  30px;
+       }
+   .logo img{
+       width: 110px;
+   }
+   hr.style3 {
+    border-top: 1px dashed white;
+    border-bottom: 1px dashed rgb(65, 63, 63);
+    margin: 10px 0px 10px 50px;
+    width: 470px;
+   }
+   .headcontact{
+    font-size: 22px;
+    margin: 10px 5px 0px 5px;
+   }
+   .mapimg{
+    width: 180px;
+    height: 140px;
+    margin: 20px 0px;
+   }
+   #datalogocontact{
+    font-size: 10px;
+   }
+   .textcontact{
+    font-size: 12px;
+   }
+   .logocontact{
+    padding:10px 10px 10px 0px;
+    grid-template-columns: 20px;
+    grid-template-rows: 60px 60px;
+   }
+   #logocon{
+    margin: 20px 0px;
+}
+   }
+
+   @media screen and (max-width:500px) {
+    .wrapper {
+     width: 100%;
+    }
+    nav .logo{
+        margin: 20px  20px;
+       }
+   .logo img{
+       width: 100px;
+   }
+   hr.style3 {
+    border-top: 1px dashed white;
+    border-bottom: 1px dashed rgb(65, 63, 63);
+    margin: 10px 0px 10px 30px;
+    width: 350px;
+   }
+   .datacontact{
+    display: flex;
+  flex-flow: wrap;
+    margin: 20px 30px 20px 60px ;
+   }
+   .headcontact{
+    font-size: 18px;
+    margin: 10px 5px 0px 5px;
+   }
+   .mapimg{
+    width: 300px;
+    height: 180px;
+    margin: 10px 0px;
+   }
+   #datalogocontact{
+    font-size: 12px;
+   }
+   .textcontact{
+    font-size: 12px;
+   }
+   .logocontact{
+    padding:10px 0px 10px 20px;
+    grid-template-columns: 20px;
+    grid-template-rows: 60px 60px;
+   }
+   #logocon{
+    margin: 20px 0px;
+}
+.datacontact{
+    display: flex;
+  flex-flow: wrap;
+   }
+ 
+   }
+
+
+@media screen and (max-width:400px) {
+    .wrapper {
+     width: 100%;
+    }
+       nav img{
+        margin-top: 20px;
+        width: 120px;
+    }
+    .menu a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        padding: 10px 18px;
+        margin: 0 14px;
+      }
+   hr.style3 {
+    border-top: 1px dashed white;
+    border-bottom: 1px dashed rgb(65, 63, 63);
+    margin: 10px 0px 10px 40px;
+    width: 300px;
+   }
+   .datacontact{
+    display: flex;
+  flex-flow: wrap;
+    margin: 20px 30px 20px 60px ;
+   }
+   .headcontact{
+    font-size: 18px;
+    margin: 10px 5px 0px 5px;
+   }
+   .mapimg{
+    width: 260px;
+    height: 160px;
+   }
+   #datalogocontact{
+    font-size: 11px;
+   }
+   .textcontact{
+    font-size: 10px;
+   }
+   .logocontact{
+    padding:10px 0px 10px 0px;
+    grid-template-columns: 20px;
+    grid-template-rows: 60px 60px;
+   }
+  
+   #logocon{
+    margin: 20px 0px;
+}
+   ul li a{
+    font-size: 12px;
+    margin:0 8px 0 8px;
+   }
+   summary {
+    padding: 10px 8px;
+    width: 23px;
+    height: 17px;
+  }
+  details {
+    top:10px;
+  }
+   }
